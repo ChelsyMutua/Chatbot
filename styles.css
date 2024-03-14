@@ -1,0 +1,112 @@
+body{
+margin: 0;
+background-color: black;
+}
+.grid-container{
+display: grid;
+grid-template-columns: 1fr 3fr;
+column-gap: 0.4%;
+height: 99vh;
+margin: 4px;
+}
+
+/* Columns of the grid*/
+
+.right{
+background-color: #343541;
+border-radius: 1%;
+}
+.left{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    background-color: #20232e;
+    border-radius: 2%;
+}
+
+/* The left column */
+#Brand{
+display: flex;
+justify-content: center;
+}
+.mid-section{
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+/* justify-content: center; */
+padding: 10px ;
+background-color: #343541;
+height: 40vh;
+border-radius: 5%;
+border-color:aliceblue;
+}
+.write{
+height: 20px;
+width: 20px;
+
+}
+.line1{
+border-top: 1px solid red;
+}
+/* Style the buttons */
+#search-btn, #history-btn{
+    background: unset !important;
+    border: unset !important;
+    outline: unset !important;
+    color: white; 
+    font-size: medium;
+    font-weight: 100;
+}
+
+/*  */
+
+/* Style the profile */
+.profile-section{
+display: flex;
+/* justify-content: space-; */
+grid-row-start: -1;
+gap: 10px;
+}
+.pic{
+height: 40px;
+width: 40px;
+border-radius: 50%;
+align-self: center;
+}
+.name{
+color: white;
+}
+
+/* The right column */
+.bottom-message{
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+height: 90vh;
+margin-left: 90px;
+position: relative;
+}
+.message-Area{
+background-color:#40414e ;
+border: 1px solid white;
+border-radius: 20px;
+width: 90%;
+height: 50px;
+font-size: large;
+color: white;
+padding-left: 15px;
+}
+.bigicon {
+    font-size: 32px; 
+  }
+  
+.sendbtn{
+background-color: #40414e;
+border: 1px solid white;
+border-radius: 20px;
+width: 60px;
+height: 50px;
+bottom: 0;
+
+}
+
